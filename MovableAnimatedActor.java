@@ -59,6 +59,7 @@ public class MovableAnimatedActor extends AnimatedActor
             if (isBlocked())
                 setLocation(x+1,y);
         }
+        /*
         else if (Mayflower.isKeyDown( Keyboard.KEY_DOWN ))
         {
             if (direction.equals("left"))
@@ -67,6 +68,7 @@ public class MovableAnimatedActor extends AnimatedActor
                 newAction = "walkRight";
             setLocation(x,y+speed);
         }
+        */
         else if (Mayflower.isKeyDown( Keyboard.KEY_UP ))
         {
             if (direction.equals("left"))
@@ -93,7 +95,7 @@ public class MovableAnimatedActor extends AnimatedActor
             }
         }
         
-        if (x>=(800-w))
+        if (x>=(1600-w))
         {
             setLocation(800-w-1,y);
         }
@@ -105,10 +107,11 @@ public class MovableAnimatedActor extends AnimatedActor
         {
             setLocation(x,1);
         }
-        if (y>=(600-h))
+        if (y>=(900-h))
         {
             setLocation(x,600-h-1);
         }
+        //thank you hudson!
         super.act();
         
         if (newAction!=null && !newAction.equals(currentAction))

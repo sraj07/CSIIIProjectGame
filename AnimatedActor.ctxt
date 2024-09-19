@@ -2,6 +2,8 @@
 comment0.target=AnimatedActor
 comment1.params=
 comment1.target=AnimatedActor()
-comment2.params=
-comment2.target=void\ act()
-numComments=3
+comment2.params=a
+comment2.target=void\ setAnimation(Animation)
+comment3.params=
+comment3.target=void\ act()
+numComments=4
