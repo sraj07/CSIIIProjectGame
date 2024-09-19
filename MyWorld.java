@@ -17,7 +17,7 @@ public class MyWorld extends World {
     {
         setBackground("img/BG/BG-1.png");
         
-        tiles = new String[9][16];
+        tiles = new String[7][12];
         buildWorld();
         
         Mayflower.showBounds(true);
