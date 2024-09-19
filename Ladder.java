@@ -3,8 +3,7 @@ public class Ladder extends Actor
 {
     public Ladder()
     {
-        setImage("img/Object/Ladder (1).png");
-        //"H:\CSIII\Project0 - Copy\img\Object\Ladder (1).png"
+        setImage("img/Object/Ladder (1).jpeg");
     }
     
     public void act()

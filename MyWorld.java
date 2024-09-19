@@ -22,11 +22,12 @@ public class MyWorld extends World {
         
         Mayflower.showBounds(true);
         
-        fish = new Fish();
-        addObject(fish, 100, 100);
-        
         ladder = new Ladder();
-        addObject(ladder, 300, 300);
+        addObject(ladder, 150, 485);
+        
+        
+        fish = new Fish();
+        addObject(fish, 0, 100);
     }
     
     public void buildWorld()
@@ -43,7 +44,7 @@ public class MyWorld extends World {
         {
             tiles[tiles.length-1][k] = "ground";
         }
-
+        
         for (int l=0;l<tiles.length;l++)
         {
             for (int m=0;m<tiles[0].length;m++)
