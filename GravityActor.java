@@ -15,8 +15,8 @@ public class GravityActor extends Block
         
         if (isBlocked())
             setLocation(getX(), getY()-gravity);
-        //if (isClimbing())
-        //    setLocation(getX(), getY()-2);
+        //if (isTouching(Ladder.class))
+        //    setLocation(getX(), getY()-gravity);
     }
     
     public boolean isBlocked()
@@ -30,15 +30,6 @@ public class GravityActor extends Block
         setLocation(getX(), getY() + gravity);
         ret = isTouching(Block.class);
         setLocation(getX(), getY() - gravity);
-        return !ret;
-    }
-    
-    public boolean isClimbing()
-    {
-        boolean ret;
-        setLocation(getX(), getY() + 1);
-        ret = isTouching(Ladder.class);
-        setLocation(getX(), getY() - 1);
         return !ret;
     }
 }

@@ -3,7 +3,7 @@ public class Ladder extends Actor
 {
     public Ladder()
     {
-        setImage("img/Object/Ladder (1).jpeg");
+        setImage("img/Object/ladder.png");
     }
     
     public void act()

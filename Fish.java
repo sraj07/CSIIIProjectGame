@@ -16,12 +16,12 @@ public class Fish extends MovableAnimatedActor
         String[] walkRightAnimation = new String[10];
         for (int i=0;i<10;i++)
         {
-            walkRightAnimation[i] = "img/cat/Walk (" + (i+1) + ").png";
+            walkRightAnimation[i] = "img/fish/New Piskel-" + (i+1) + ".png.png";
+            //                                New Piskel-      1      .png.png
         }
         walkRight = new Animation(50, walkRightAnimation);
         walkRight.scale(100,87);
-        walkRight.setBounds(18, 5, 54, 80);
-        walkRight.setTransparency(3);
+        //walkRight.setBounds(18, 5, 54, 80);
         setAnimation(walkRight);
         setWalkRightAnimation(walkRight);
         
@@ -29,60 +29,57 @@ public class Fish extends MovableAnimatedActor
         String[] walkLeftAnimation = new String[10];
         for (int i=0;i<10;i++)
         {
-            walkLeftAnimation[i] = "img/cat/Walk (" + (i+1) + ").png";
+            walkLeftAnimation[i] = "img/fish/New Piskel-" + (i+1) + ".png.png";
         }
         walkLeft = new Animation(50, walkLeftAnimation);
         walkLeft.mirrorHorizontally();
         walkLeft.scale(100,87);
-        walkLeft.setBounds(28,5,54,80);
-        walkLeft.setTransparency(3);
+        //walkLeft.setBounds(28,5,54,80);
         setWalkLeftAnimation(walkLeft);
         
         //idleLeft
         String[] idleLeftAnimation = new String[10];
         for (int i=0;i<10;i++)
         {
-            idleLeftAnimation[i] = "img/cat/Idle (" + (i+1) + ").png";
+            idleLeftAnimation[i] = "img/fish/New Piskel-" + (i+1) + ".png.png";
         }
         idleLeft = new Animation(50, idleLeftAnimation);
         idleLeft.mirrorHorizontally();
         idleLeft.scale(100,87);
-        idleLeft.setBounds(28,5,54,80);
-        idleLeft.setTransparency(3);
+        //idleLeft.setBounds(28,5,54,80);
         setIdleLeftAnimation(idleLeft);
         
         //idle (Right)
         String[] idleAnimation = new String[10];
         for (int i=0;i<10;i++)
         {
-            idleAnimation[i] = "img/cat/Idle (" + (i+1) + ").png";
+            idleAnimation[i] = "img/fish/New Piskel-" + (i+1) + ".png.png";
         }
         idle = new Animation(50, idleAnimation);
         idle.scale(100,87);
-        idle.setBounds(18,5,54,80);
-        idle.setTransparency(3);
+        //idle.setBounds(18,5,54,80);
         setIdleAnimation(idle);
         
         //fallRight
         String[] fallRightAnimation = new String[8];
         for (int i=0;i<8;i++)
         {
-            fallRightAnimation[i] = "img/cat/Fall (" + (i+1) + ").png";
+            fallRightAnimation[i] = "img/fish/New Piskel-" + (i+1) + ".png.png";
         }
         fallRight = new Animation(50, fallRightAnimation);
+        //fallRight.setBounds(18, 5, 54, 80);
         fallRight.scale(100,87);
-        fallRight.setTransparency(3);
         setFallRightAnimation(fallRight);
         
         String[] fallLeftAnimation = new String[8];
         for (int i=0;i<8;i++)
         {
-            fallLeftAnimation[i] = "img/cat/Fall (" + (i+1) + ").png";
+            fallLeftAnimation[i] = "img/fish/New Piskel-" + (i+1) + ".png.png";
         }
         fallLeft = new Animation(50, fallLeftAnimation);
+        //fallLeft.setBounds(28, 5, 54, 80);
         fallLeft.mirrorHorizontally();
         fallLeft.scale(100,87);
-        fallLeft.setTransparency(3);
         setFallLeftAnimation(fallLeft);
     }
     
