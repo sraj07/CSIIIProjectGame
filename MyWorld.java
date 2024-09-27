@@ -23,7 +23,8 @@ public class MyWorld extends World {
         Mayflower.showBounds(true);
         
         ladder = new Ladder();
-        addObject(ladder, 150, 485);
+        ladder.scale(2);
+        addObject(ladder, 150, 125);
         
         
         fish = new Fish();
@@ -45,6 +46,26 @@ public class MyWorld extends World {
             tiles[tiles.length-1][k] = "ground";
         }
         
+        for (int i=3;i<=5;i++)
+        {
+            tiles[tiles.length-2][i] = "ground";
+            tiles[tiles.length-3][i] = "ground";
+            tiles[tiles.length-4][i] = "ground";
+        }
+        
+        for (int i=6; i<=7; i++)
+        {
+            tiles[tiles.length-2][i] = "ground";
+            tiles[tiles.length-3][i] = "ground";
+            tiles[tiles.length-4][i] = "ground";
+            tiles[tiles.length-5][i] = "ground";
+        }
+        
+        tiles[tiles.length-2][tiles[0].length-1] = "ground";
+        tiles[tiles.length-3][tiles[0].length-1] = "ground";
+        tiles[tiles.length-4][tiles[0].length-1] = "ground";
+        tiles[tiles.length-5][tiles[0].length-1] = "ground";
+        
         for (int l=0;l<tiles.length;l++)
         {
             for (int m=0;m<tiles[0].length;m++)
@@ -53,8 +74,11 @@ public class MyWorld extends World {
                 {
                     addObject(new Block(), m*100, l*100);
                 }
+                //addObject(new Block, )
             }
         }
+        
+        
     }
     
     public void act() {}

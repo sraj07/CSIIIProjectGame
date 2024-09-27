@@ -8,6 +8,4 @@ comment3.params=
 comment3.target=boolean\ isBlocked()
 comment4.params=
 comment4.target=boolean\ isFalling()
-comment5.params=
-comment5.target=boolean\ isClimbing()
-numComments=6
+numComments=5

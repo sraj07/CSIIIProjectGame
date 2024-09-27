@@ -70,16 +70,19 @@ public class Cat extends MovableAnimatedActor
             fallRightAnimation[i] = "img/cat/Fall (" + (i+1) + ").png";
         }
         fallRight = new Animation(50, fallRightAnimation);
+        fallRight.setBounds(18,5,54,80);
         fallRight.scale(100,87);
         fallRight.setTransparency(3);
         setFallRightAnimation(fallRight);
         
+        //fallLeft
         String[] fallLeftAnimation = new String[8];
         for (int i=0;i<8;i++)
         {
             fallLeftAnimation[i] = "img/cat/Fall (" + (i+1) + ").png";
         }
         fallLeft = new Animation(50, fallLeftAnimation);
+        fallLeft.setBounds(28,5,54,80);
         fallLeft.mirrorHorizontally();
         fallLeft.scale(100,87);
         fallLeft.setTransparency(3);
